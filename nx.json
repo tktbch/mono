@@ -15,16 +15,49 @@
       "runner": "@nrwl/nx-cloud",
       "options": {
         "accessToken": "ODkyMzRhYzctNjk3Ni00NzE4LThkYTYtMzBmZjBkOTc0ZmQzfHJlYWQtd3JpdGU=",
-        "cacheableOperations": [
-          "build",
-          "test",
-          "lint",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
         "canTrackAnalytics": false,
         "showUsageWarnings": true
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "tickets": {
+      "tags": []
+    },
+    "orders": {
+      "tags": []
+    },
+    "auth": {
+      "tags": []
+    },
+    "payments": {
+      "tags": []
+    },
+    "client": {
+      "tags": []
+    },
+    "client-e2e": {
+      "tags": [],
+      "implicitDependencies": ["client"]
+    },
+    "expiration": {
+      "tags": []
+    },
+    "common-errors": {
+      "tags": []
+    },
+    "common-events": {
+      "tags": []
+    },
+    "common-middlewares": {
+      "tags": []
+    },
+    "util-helpers": {
+      "tags": []
+    },
+    "common-types": {
+      "tags": []
+    }
+  }
 }
